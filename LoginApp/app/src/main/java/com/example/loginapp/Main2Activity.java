@@ -25,7 +25,7 @@ public class Main2Activity extends AppCompatActivity {
     private Toast backToast;
     private Button buttonSignIn;
     private EditText editTextEmail;
-    private Button btnn;
+   // private Button btnn;
     private EditText editTextPassword;
 
     @Override
@@ -46,20 +46,10 @@ public class Main2Activity extends AppCompatActivity {
         }
         //yahan tak
         editTextEmail = (EditText) findViewById(R.id.name);
-        btnn=(Button) findViewById(R.id.btnn);
+        //btnn=(Button) findViewById(R.id.btnn);
         editTextPassword = (EditText) findViewById(R.id.pass);
         buttonSignIn = (Button) findViewById(R.id.button);
-        btnn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(view==btnn)
-                {
-                    Intent intent=new Intent(Main2Activity.this, Main4Activity.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        });
+
         buttonSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

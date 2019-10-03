@@ -8,9 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 public class Main4Activity extends AppCompatActivity implements View.OnClickListener {
 private CardView one,two,three,four,five,six;
+private ImageButton btnn;
 
 
     @Override
@@ -25,13 +27,23 @@ private CardView one,two,three,four,five,six;
         four =(CardView) findViewById(R.id.four);
         five =(CardView) findViewById(R.id.five);
         six =(CardView) findViewById(R.id.six);
+        btnn=findViewById(R.id.imgbtn);
         one.setOnClickListener(this);
         two.setOnClickListener(this);
         three.setOnClickListener(this);
         four.setOnClickListener(this);
         five.setOnClickListener(this);
         six.setOnClickListener(this);
+        btnn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(view==btnn){
+                    Intent intent=new Intent(Main4Activity.this, BookListActivity.class);
+                    startActivity(intent);
 
+                }
+            }
+        });
 
     }
 

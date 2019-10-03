@@ -6,7 +6,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
     android:background="@drawable/mb"
-    tools:context=".MainActivity">
+    tools:context=".Main2Activity">
 
 
     <EditText
@@ -71,19 +71,6 @@ android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.685"
         app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/btnn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/mybutton"
-        android:text="DEMO"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
